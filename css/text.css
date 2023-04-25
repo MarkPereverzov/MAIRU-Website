@@ -1,0 +1,55 @@
+/*FONTS*/
+
+@font-face {
+    src: url(../fonts/Exo.ttf);
+    font-family: Exo;
+}
+@font-face {
+    src: url(../fonts/ExoBold.ttf);
+    font-family: ExoBold;
+}
+@font-face {
+    src: url(../fonts/Inter.ttf);
+    font-family: Inter;
+}
+@font-face {
+    src: url(../fonts/InterBold.ttf);
+    font-family: InterBold;
+}
+@font-face {
+    src: url(../fonts/Roboto.ttf);
+    font-family: Roboto;
+}
+@font-face {
+    src: url(../fonts/RobotoBold.ttf);
+    font-family: RobotoBold;
+}
+
+/*TEXT*/
+
+.Exo-gray-16-400 {
+    color: #7A7A7B;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin: 0px;
+    padding: 3px;
+}
+.Exo-white-16-600 {
+    color: white;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 3px;
+}
+.ExoBold-white-90-700 {
+    color: white;
+    font-size: 90px;
+    font-family: ExoBold, sans-serif;
+    font-weight: 700;
+    text-align: left;
+}

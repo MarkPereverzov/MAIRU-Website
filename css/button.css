@@ -1,0 +1,43 @@
+/*button*/
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto; height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn span {         
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    transition: 0.3s;
+    color: white;
+    font-size: 15px;
+    font-family: Inter, sans-serif;
+    text-align: left;
+    margin: 0px;
+    padding: 3px;
+}
+.btn-1::before {
+    background-color: #1D1D1E;
+    transition: 0.3s ease-out;
+}
+.btn-1 span {
+    color: white;
+    transition: 0.2s 0.1s;
+}
+.btn-1 span:hover {
+    color: #7A7A7B;
+    transition: 0.2s 0.1s;
+}
+.btn.hover-filled-opacity::before {
+    top:0; bottom: 0; right: 0;
+    height: 100%; width: 100%;
+    opacity: 1;
+}
+.btn.hover-filled-opacity:hover::before {
+    opacity: 0;
+}
