@@ -27,17 +27,18 @@
 }
 .btn-1 span {
     color: white;
+    text-align: center;
     transition: 0.2s 0.1s;
 }
 .btn-1 span:hover {
     color: #7A7A7B;
     transition: 0.2s 0.1s;
 }
-.btn.hover-filled-opacity::before {
+.opacity::before {
     top:0; bottom: 0; right: 0;
     height: 100%; width: 100%;
     opacity: 1;
 }
-.btn.hover-filled-opacity:hover::before {
+.opacity:hover::before {
     opacity: 0;
 }
