@@ -8,6 +8,11 @@
     flex-flow: row;
     background-color: #222223;
     border-radius: 24px;
+
+    list-style-type: none;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
 }
 .navigation > div {
     height: 100%;
