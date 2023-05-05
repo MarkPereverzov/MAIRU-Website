@@ -37,3 +37,9 @@
     width: 25px; height: 25px;
     margin: auto;
 }
+.column:hover > img{
+    width: 25px; height: 25px;
+    margin: 3px;
+
+    transition: 0.5s 0.1s;
+}

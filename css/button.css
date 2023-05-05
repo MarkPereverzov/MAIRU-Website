@@ -9,7 +9,7 @@
     display: flex;
     justify-content: flex-end;
 }
-.btn span {    
+.btn a {    
     width: 100%;     
     position: relative;
     display: inline-block;
@@ -25,12 +25,12 @@
     background-color: #1D1D1E;
     transition: 0.3s ease-out;
 }
-.btn-1 span {
+.btn-1 a {
     color: white;
     text-align: center;
     transition: 0.2s 0.1s;
 }
-.btn-1 span:hover {
+.btn-1 a:hover {
     color: #7A7A7B;
     transition: 0.2s 0.1s;
 }
@@ -41,4 +41,16 @@
 }
 .opacity:hover::before {
     opacity: 0;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
 }

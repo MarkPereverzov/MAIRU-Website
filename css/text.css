@@ -48,6 +48,17 @@
 
     color: white;
 }
+.Inter-white-15-600 {
+    margin: 0px; padding: 3px;
+
+    font-size: 15px;
+    font-family: Inter, sans-serif;
+    text-align: left;
+    margin: 0px;
+    padding: 3px;
+
+    color: white;
+}
 .ExoBold-white-90-700 {
     font-size: 90px;
     font-family: ExoBold, sans-serif;
