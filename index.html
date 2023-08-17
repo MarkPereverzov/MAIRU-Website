@@ -6,17 +6,42 @@
         <link rel="stylesheet" href="./css/text.css" type="text/css"/>
         <link rel="stylesheet" href="./css/button.css" type="text/css"/>
 
+        <link rel="stylesheet" href="./css/commands.css" type="text/css"/>
         <link rel="stylesheet" href="./css/navigation.css" type="text/css"/>
         <link rel="stylesheet" href="./css/header.css" type="text/css"/>
         <link rel="stylesheet" href="./css/card.css" type="text/css"/>
         <link rel="stylesheet" href="./css/table.css" type="text/css"/>
         <link rel="stylesheet" href="./css/cube.css" type="text/css"/>
         <link rel="stylesheet" href="./css/footer.css" type="text/css"/>
+
         <link rel="shortcut icon" href="images/icon.ico">
     </head>
     <body>
         <div class="flex-container">
-            
+
+            <div class="navigation" id="section-1">
+                <div class="navigation-left-item">
+                    <img src="images/icon-white.png">
+                </div>
+                <div class="navigation-right-item"> 
+                    <button class="btn btn-1 hover-filled-opacity">
+                        <a href="#section-2">Статистика</a>
+                    </button>
+                    <button class="btn btn-1 hover-filled-opacity">
+                        <a href="#section-3">Пользователи</a>
+                    </button>
+                    <button class="btn btn-1 hover-filled-opacity">
+                        <a href="#section-4">Активность</a>
+                    </button>
+                    <button class="btn btn-1 hover-filled-opacity">
+                        <a href="#section-5">Команды</a>
+                    </button>
+                    <button class="btn btn-1 hover-filled-opacity">
+                        <a href="#section-6">В общем</a>
+                    </button>
+                </div>
+            </div>
+
             <div class="header">
                 <div class="header-left-item">
                     <img src="images/preview.png">
@@ -28,30 +53,7 @@
                 </div>
             </div>
 
-            <div class="navigation">
-                <div class="navigation-left-item">
-                    <img src="images/icon-white.png">
-                </div>
-                <div class="navigation-right-item"> 
-                    <button class="btn btn-1 hover-filled-opacity">
-                        <a href="#section-1">Статистика</a>
-                    </button>
-                    <button class="btn btn-1 hover-filled-opacity">
-                        <a href="#section-2">Пользователи</a>
-                    </button>
-                    <button class="btn btn-1 hover-filled-opacity">
-                        <a href="#section-3">Активность</a>
-                    </button>
-                    <button class="btn btn-1 hover-filled-opacity">
-                        <a href="#section-4">Команды</a>
-                    </button>
-                    <button class="btn btn-1 hover-filled-opacity">
-                        <a href="#section-5">В общем</a>
-                    </button>
-                </div>
-            </div>
-
-            <div class="cards" id="section-1">
+            <div class="cards" id="section-2">
                 <div class="cards-container">
                     <div class="cards-container-marge">
                         <div class="card">
@@ -143,7 +145,7 @@
                 </div>
             </div>
 
-            <div class="table" id="section-2">
+            <div class="table" id="section-3">
                 <div class="row">
                     <div class="row-container">
                         <img src="images/user.png">
@@ -321,7 +323,7 @@
                 </div>
             </div>
 
-            <div class="cube" id="section-3">
+            <div class="cube" id="section-4">
                 <div class="cube-container">
                     <div class="column">
                         <img src="images/voice.png">
@@ -340,6 +342,68 @@
                     </div>
                 </div>
             </div>
+
+            <div class="commands" id="section-5">
+                <div class="boxy">
+                    <div>
+                        <button class="command accordion">
+                            <img src="images/command.png">
+                            <div class="Inter-white-15-600">Название команды</div>
+                        </button>
+                        <div class="panel Inter-gray-16-400-center">
+                            <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="command accordion">
+                            <img src="images/command.png">
+                            <div class="Inter-white-15-600">Название команды</div>
+                        </button>
+                        <div class="panel Inter-gray-16-400-center">
+                            <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxy">
+                    <div>
+                        <button class="command accordion">
+                            <img src="images/command.png">
+                            <div class="Inter-white-15-600">Название команды</div>
+                        </button>
+                        <div class="panel Inter-gray-16-400-center">
+                            <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="command accordion">
+                            <img src="images/command.png">
+                            <div class="Inter-white-15-600">Название команды</div>
+                        </button>
+                        <div class="panel Inter-gray-16-400-center">
+                            <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    } else { 
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                });
+                }
+            </script>
 
             <div class="footer">
                 <div class="footer-container">

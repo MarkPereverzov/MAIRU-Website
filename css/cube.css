@@ -1,10 +1,10 @@
 .cube{
     width: 1200px; height: 250px;
     margin: auto;
-
+    padding-top: 90px;
 }
 .cube-container{
-    width: 885px; height: 250px;
+    width: 865px; height: 250px;
     margin: auto;
 
     display: flex;
@@ -15,7 +15,6 @@
 }
 .column{
     width: 75px; height: 75px;
-    margin: 8px;
 
     display: flex;
     align-self: center;
@@ -26,12 +25,12 @@
 
     border-radius: 15px;
     border: 2px #222223 solid;
+    transition: width .5s ease-in 0s, height .5s ease-in 0s, border .5s ease-in 0s;
 }
 .column:hover{
     width: 175px; height: 175px;
-    margin: 24px;
+
     border: 2px #7a7a7b1e solid;
-    transition: 0.5s 0.1s;
 }
 .column > img{
     width: 25px; height: 25px;
@@ -39,7 +38,4 @@
 }
 .column:hover > img{
     width: 25px; height: 25px;
-    margin: 3px;
-
-    transition: 0.5s 0.1s;
 }
