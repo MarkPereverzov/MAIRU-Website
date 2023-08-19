@@ -24,15 +24,18 @@
 
     transition: border .5s ease-in 0s;
 }
+
 .row-container{
     padding: 20px;
 
     display: flex;
     flex-direction: row;
 }
+
 .row-container > img{
     width: 25px; height: 25px;
 }
+
 .row:hover{
     width: 865px; height: 80px;
     margin: 8px;

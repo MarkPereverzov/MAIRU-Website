@@ -1,22 +1,22 @@
 <html>
     <head>
         <title>MAIRU</title>
-        <link rel="stylesheet" href="./css/demo.css" type="text/css"/>
+        
+        <link rel="shortcut icon" href="images/icon.ico">
 
-        <link rel="stylesheet" href="./css/text.css" type="text/css"/>
-        <link rel="stylesheet" href="./css/button.css" type="text/css"/>
-
-        <link rel="stylesheet" href="./css/commands.css" type="text/css"/>
-        <link rel="stylesheet" href="./css/navigation.css" type="text/css"/>
+        <link rel="stylesheet" href="./css/main.css" type="text/css"/>
         <link rel="stylesheet" href="./css/header.css" type="text/css"/>
+        <link rel="stylesheet" href="./css/navigation.css" type="text/css"/>
         <link rel="stylesheet" href="./css/card.css" type="text/css"/>
         <link rel="stylesheet" href="./css/table.css" type="text/css"/>
         <link rel="stylesheet" href="./css/cube.css" type="text/css"/>
+        <link rel="stylesheet" href="./css/commands.css" type="text/css"/>
+        <link rel="stylesheet" href="./css/info.css" type="text/css"/>
         <link rel="stylesheet" href="./css/footer.css" type="text/css"/>
-
-        <link rel="shortcut icon" href="images/icon.ico">
     </head>
+
     <body>
+
         <div class="flex-container">
 
             <div class="navigation" id="section-1">
@@ -326,29 +326,48 @@
             <div class="cube" id="section-4">
                 <div class="cube-container">
                     <div class="column">
-                        <img src="images/voice.png">
-                        <h6>Channel name</h6>
-                        <h4 class="room-counter">2</h4>
-                        <ul>
-                            <li>
-                                <div class="user-block">
-                                    <div class="userAvatar" style="background-image: url('images/discord-user-template.webp');"></div>
-                                    <p class="user-name">максик</p>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="room">
+                            <img src="images/voice.png">
+                            <div class="Inter-white-15-600">Комната 1</div>
+                            <div class="user">
+
+                            </div>
+                        </div>
                     </div>
                     <div class="column">
-                        <img src="images/voice.png">
+                        <div class="room">
+                            <img src="images/voice.png">
+                            <div class="Inter-white-15-600">Комната 2</div>
+                            <div class="user">
+
+                            </div>
+                        </div>
                     </div>
                     <div class="column">
-                        <img src="images/voice.png">
+                        <div class="room">
+                            <img src="images/voice.png">
+                            <div class="Inter-white-15-600">Комната 3</div>
+                            <div class="user">
+
+                            </div>
+                        </div>
                     </div>
                     <div class="column">
-                        <img src="images/voice.png">
-                    </div>
-                    <div class="column">
-                        <img src="images/voice.png">
+                        <div class="room">
+                            <img src="images/voice.png">
+                            <div class="Inter-white-15-600">Комната 4</div>
+                            <div class="user">
+
+                            </div>
+                        </div>
+                    </div><div class="column">
+                        <div class="room">
+                            <img src="images/voice.png">
+                            <div class="Inter-white-15-600">Комната 5</div>
+                            <div class="user">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -374,6 +393,16 @@
                             <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </p>
                         </div>
                     </div>
+
+                    <div>
+                        <button class="command accordion">
+                            <img src="images/command.png">
+                            <div class="Inter-white-15-600">Название команды</div>
+                        </button>
+                        <div class="panel Inter-gray-16-400-center">
+                            <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="boxy">
                     <div>
@@ -395,25 +424,24 @@
                             <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </p>
                         </div>
                     </div>
+
+                    <div>
+                        <button class="command accordion">
+                            <img src="images/command.png">
+                            <div class="Inter-white-15-600">Название команды</div>
+                        </button>
+                        <div class="panel Inter-gray-16-400-center">
+                            <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <script>
-                var acc = document.getElementsByClassName("accordion");
-                var i;
-                
-                for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                    } else { 
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    } 
-                });
-                }
-            </script>
+            <div class="info" id="section-6">
+                <div class="infob">
+                    
+                </div>
+            </div>
 
             <div class="footer">
                 <div class="footer-container">
@@ -430,10 +458,11 @@
                 </div>
             </div>
 
+            <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+            <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+            <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+            <script src="js/index.js" type="text/jsx"></script>
+            <script type="text/javascript" src="js/commands.js"></script>
         </div>
-        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-        <script src="js/index.js" type="text/jsx"></script>
     </body>
 </html>

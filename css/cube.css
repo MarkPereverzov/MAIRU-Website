@@ -8,21 +8,28 @@
     margin: auto;
 
     display: flex;
-    flex-direction: row;
-    align-self: center;
     align-items: center;
     justify-content: space-between;
 }
+.room{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    Justify-content: center;
+}
+
+.room:hover{
+    align-items: start;
+    Justify-content: center;
+}
+
 .column{
-    width: 75px; height: 75px;
+    width: 85px; height: 85px;
 
     display: flex;
-    align-self: center;
-    align-items: center;
-    justify-content: space-between;
 
     background-color: #222223;
-
+    Justify-content: center;
     border-radius: 15px;
     border: 2px #222223 solid;
     transition: width .5s ease-in 0s, height .5s ease-in 0s, border .5s ease-in 0s;
@@ -47,6 +54,19 @@
 .column:hover > h6 {
     display: flex;
 }
+
+.user{
+    display: flex;
+    flex-direction: row;
+    Justify-content: start;
+}
+
+.user > img{
+    width: 25px; height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .user-block
 {
     display: none;
@@ -68,14 +88,19 @@
     margin: 0px;
 
 }
-.column > img{
-    width: 25px; height: 25px;
-    margin: auto;
-}
-.column:hover > img{
-
+.hide:hover{
     display: none;
 }
+
+.room > img{
+    width: 25px; height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.column:hover > img{
+    display: none;
+}
+
 .column > h6
 {
     display: none;

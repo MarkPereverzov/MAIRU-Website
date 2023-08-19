@@ -26,7 +26,13 @@
 }
 .navigation-left-item > img {
     width: 70px; height: 70px;
+    transition: 2s;
 }
+
+.navigation-left-item:hover > img {
+    transform: rotate(230deg);
+}
+
 .navigation-right-item {
     width: 70%;
     float: right;
